@@ -27,16 +27,17 @@ text.setFont(QFont("Times",24))
 # text.setGeometry(100,250,100,100)
 text.move(100,250)
 
-# QPushButton
-ok=QPushButton("Ok",window)
-ok.setFont(QFont("Times",24))
-ok.move(200,450)
-# print(yozuv.text())
 def run():
     a=line.text()
     yozuv.setText(a)
     yozuv.adjustSize()
 ok.clicked.connect(run)
+
+# QPushButton
+ok=QPushButton("Ok",window)
+ok.setFont(QFont("Times",24))
+ok.move(200,450)
+# print(yozuv.text())
 
 window.show()
 app.exec_()
